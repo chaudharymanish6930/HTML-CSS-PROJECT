@@ -1,0 +1,86 @@
+/* Style the body */
+body {
+    background-color: #f0f4f8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    height: 100vh;           /* full viewport height */
+    margin: 0;
+}
+
+/* Style the form container */
+form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style the labels */
+label {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 6px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="password"] {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.35);
+    transform: scale(1.02);
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0056b3, #003d80);
+    transform: translateY(-2px);
+}
+
+/* Button active click effect */
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
